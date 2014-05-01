@@ -16,7 +16,7 @@ namespace myProgram
     {
         public void GetAttach(DateTime date)//получение аттачментов
         {
-            string connectStr = @"Data Source=.\NO;AttachDbFilename=C:\Users\User\Documents\GitHub\kurs_project\myDataBase.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            string connectStr = @"Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Users\Маша\Documents\GitHub\kurs_project\myDataBase.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
             SqlDataAdapter daBranch = new SqlDataAdapter("Select * from Branch", connectStr);
             SqlDataAdapter daProv = new SqlDataAdapter("Select * from Provisioner", connectStr);
             DataSet ds = new DataSet();
