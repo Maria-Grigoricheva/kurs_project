@@ -108,7 +108,6 @@
             this.btnSale.TabIndex = 5;
             this.btnSale.Text = "Список продаж";
             this.btnSale.UseVisualStyleBackColor = true;
-            this.btnSale.Click += new System.EventHandler(this.btnSale_Click);
             // 
             // btnMerch
             // 
