@@ -46,16 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\AddEdMerchForm.cs">
+    <Compile Include="AddEdCategoryForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AddEdMerchForm.Designer.cs">
-      <DependentUpon>AddEdMerchForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\AddEdCategoryForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AddEdCategoryForm.Designer.cs">
+    <Compile Include="AddEdCategoryForm.Designer.cs">
       <DependentUpon>AddEdCategoryForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\CategoryForm.cs">
@@ -100,12 +94,6 @@
     <Compile Include="Forms\ManagerForm.Designer.cs">
       <DependentUpon>ManagerForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MerchForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\MerchForm.Designer.cs">
-      <DependentUpon>MerchForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Forms\ProvisionerForm.cs">
@@ -114,11 +102,8 @@
     <Compile Include="Forms\ProvisionerForm.Designer.cs">
       <DependentUpon>ProvisionerForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Forms\AddEdCategoryForm.resx">
+    <EmbeddedResource Include="AddEdCategoryForm.resx">
       <DependentUpon>AddEdCategoryForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AddEdMerchForm.resx">
-      <DependentUpon>AddEdMerchForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CategoryForm.resx">
       <DependentUpon>CategoryForm.cs</DependentUpon>
@@ -140,9 +125,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ManagerForm.resx">
       <DependentUpon>ManagerForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MerchForm.resx">
-      <DependentUpon>MerchForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ProvisionerForm.resx">
       <DependentUpon>ProvisionerForm.cs</DependentUpon>
