@@ -9,11 +9,55 @@ using System.Windows.Forms;
 
 namespace myProgram
 {
-    public partial class Form1 : Form
+    public partial class btnReportMerch : Form
     {
-        public Form1()
+        public btnReportMerch()
         {
             InitializeComponent();
+        }
+
+        private void btnReportMerch_Load(object sender, EventArgs e)
+        {
+            DateTime date = DateTime.Now;
+            Loader loadMail = new Loader();
+            MessageBox.Show(date.ToString());
+            loadMail.GetAttach(date);
+        }
+
+        private void btnBranch_Click(object sender, EventArgs e)
+        {
+            BranchForm branchForm = new BranchForm();
+            branchForm.Show();
+        }
+
+        private void btnManager_Click(object sender, EventArgs e)
+        {
+            ManagerForm managerForm = new ManagerForm();
+            managerForm.Show();
+        }
+
+        private void btnProv_Click(object sender, EventArgs e)
+        {
+            ProvisionerForm provForm = new ProvisionerForm();
+            provForm.Show();
+        }
+
+        private void btnCategory_Click(object sender, EventArgs e)
+        {
+            CategoryForm categoryForm = new CategoryForm();
+            categoryForm.ShowDialog();
+        }
+
+        private void btnMerch_Click(object sender, EventArgs e)
+        {
+            MerchForm merchForm = new MerchForm();
+            merchForm.Show();
+        }
+
+        private void btnSale_Click(object sender, EventArgs e)
+        {
+            SaleForm saleForm = new SaleForm();
+            saleForm.Show();
         }
     }
 }
