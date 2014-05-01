@@ -33,11 +33,5 @@ namespace myProgram
             ProvisionerForm provForm = new ProvisionerForm();
             provForm.Show();
         }
-
-        private void btnCategory_Click(object sender, EventArgs e)
-        {
-            CategoryForm categoryForm = new CategoryForm();
-            categoryForm.ShowDialog();
-        }
     }
 }
