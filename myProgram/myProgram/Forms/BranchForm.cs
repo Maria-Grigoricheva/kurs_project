@@ -6,9 +6,6 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using System.Data.SqlClient;
-using System.Data.Linq;
-
 
 namespace myProgram
 {
@@ -47,11 +44,6 @@ namespace myProgram
 
             if (form.ShowDialog() == DialogResult.OK)
                 branchTableAdapter.Update(myDataBaseDataSet.Branch);
-        }
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            
         }  
     }
 }
